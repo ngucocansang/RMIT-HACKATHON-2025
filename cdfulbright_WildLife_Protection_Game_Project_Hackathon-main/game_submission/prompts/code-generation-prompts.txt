@@ -1,0 +1,3 @@
+- Create the HTML and CSS for a game with a start screen, a main game canvas, an end screen, and a hidden warning pop-up.
+- Write the JavaScript to make animals fall down the canvas, where hovering over good animals increases the score and hovering over bad animals decreases lives.
+- Add an image preloader, a difficulty system that gets harder with a higher score, a one-time warning for bad animals, high score saving, and a README file.

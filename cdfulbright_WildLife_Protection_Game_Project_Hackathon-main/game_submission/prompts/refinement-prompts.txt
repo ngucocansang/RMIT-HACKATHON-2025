@@ -1,0 +1,3 @@
+- Adjust the system so that I can add any amount of obstacles and non-obstacles as I want
+
+- Adjust the code so I can freely change the speed without you edit the code

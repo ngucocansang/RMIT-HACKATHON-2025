@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife Protector Game</title>
+    <link rel="stylesheet" href="../game_app/css/style.css" />
+    <script src="../game_app/js/game.js" defer></script>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="ready-screen" class="screen active">
+        <div class="setup-box">
+          <h3>Enter Your Name</h3>
+          <input
+            type="text"
+            id="player-name-input"
+            placeholder="Max 20 characters..."
+            maxlength="20"
+          />
+        </div>
+        <button id="start-game-btn" class="ui-button" disabled>
+          Start Game
+        </button>
+      </div>
+
+      <div id="game-screen" class="screen">
+        <canvas id="game-canvas" width="1200" height="675"></canvas>
+        <img
+          src="./assets/images/hand.png"
+          id="cursor-hand"
+          alt="hand cursor"
+        />
+      </div>
+
+      <div id="end-screen" class="screen">
+        <div class="score-box">
+          <h2>Game Over</h2>
+          <p>Your Score: <span id="final-score">0</span></p>
+          <h3>High Scores</h3>
+          <ol id="high-scores-list"></ol>
+          <button id="play-again-btn" class="ui-button">Play Again</button>
+        </div>
+      </div>
+
+      <div id="warning-modal" class="modal-overlay">
+        <div class="modal-content">
+          <h2>Warning!</h2>
+          <p id="warning-text">
+            This is a rare animal and cannot be touched. You will lose a life if
+            you touch it again!
+          </p>
+          <button id="continue-btn" class="ui-button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
