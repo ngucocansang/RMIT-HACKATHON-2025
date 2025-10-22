@@ -36,7 +36,7 @@ AZURE_ENDPOINT = os.getenv(
 )
 AZURE_API_KEY = os.getenv(
     "AZURE_API_KEY",
-    "EOd81yMG8zL8My7IRsBuBT9Z3iBMkL51KBTJ4xba6l5MWYguNnHBJQQJ99BJACYeBjFXJ3w3AAABACOGb1Yy"
+    # "your-api-key-here"
 )
 
 DEPLOYMENT_NAME = "gpt-35-turbo"
